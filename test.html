@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Blocker Test - Block Scope</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Block Scope</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="test.html">Run Test</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="test-page">
+    <h1>Test Your Ad Blocker</h1>
+    <p>We'll test your ad blocker against several types of ads. Check below if each ad type is blocked.</p>
+
+    <!-- Static Ad Test -->
+    <div class="test-item" id="static-ad-test">
+      <h2>Static Banner Ad</h2>
+      <div class="ad-box">
+        <p>Static Banner Ad</p>
+      </div>
+    </div>
+
+    <!-- Popup Ad Test -->
+    <div class="test-item" id="popup-ad-test">
+      <h2>Popup Ad</h2>
+      <button onclick="openPopup()">Click to test Popup</button>
+    </div>
+
+    <!-- JS Script Ad Test -->
+    <div class="test-item" id="js-ad-test">
+      <h2>JS Script Ad</h2>
+      <div class="ad-box">
+        <script src="js-ad.js"></script>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <p>&copy; 2025 Block Scope. All rights reserved.</p>
+    </footer>
+  </section>
+
+  <script src="test.js"></script>
+</body>
+</html>
