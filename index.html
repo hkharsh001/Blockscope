@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlockScope - Ad Blocker Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockScope - Advanced Ad Blocker Test</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="BlockScope is a tool to test how well your ad blocker works. Detect banners, native ads, and more.">
-  <meta name="keywords" content="ad blocker test, adblock, block ads, BlockScope">
+  <meta name="description" content="Test how effectively your ad blocker works on different types of ads including banners, popups, native, and video ads." />
+  <meta name="keywords" content="ad blocker test, adblock, block ads, BlockScope" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <div class="container">
     <h1>Welcome to BlockScope</h1>
-    <p>Test how strong your ad blocker really is.</p>
-
+    <p>Test how strong your ad blocker really is. We’ll show various types of ads and let you know if your ad blocker is working.</p>
+    
+    <!-- Test area with multiple types of ads -->
     <div class="test-area">
       <div class="ad-box ad-banner" id="banner-ad">Banner Ad</div>
-      <div class="ad-box ad-text" id="text-ad">Sponsored Link</div>
+      <div class="ad-box ad-text" id="text-ad">Sponsored Content</div>
       <div class="ad-box ad-native" id="native-ad">Native Ad</div>
       <div class="ad-box ad-video" id="video-ad">
         <video id="ad-video" width="320" height="240" autoplay muted loop>
@@ -26,22 +27,27 @@
         <p>Autoplay Video Ad</p>
       </div>
     </div>
-
+    
+    <!-- Result section -->
     <div id="results" class="results"></div>
 
+    <!-- Dynamic Popup Ad -->
     <div class="popup" id="popup">
       <div class="popup-content">
         <h2>Popup Ad</h2>
-        <p>This is a popup ad.</p>
+        <p>This is a popup ad to test your blocker.</p>
         <button id="close-popup">Close</button>
       </div>
     </div>
 
+    <!-- Footer -->
     <div class="sticky-footer">
       <div class="ad-box ad-footer">Sticky Footer Ad</div>
     </div>
 
-    <p class="footer">Created with curiosity by Harsh</p>
+    <div class="footer">
+      <p>Created by Harsh. All rights reserved.</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
