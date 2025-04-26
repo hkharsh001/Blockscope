@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlockScope - Ad Blocker Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="BlockScope is a tool to test how well your ad blocker works. Detect banners, native ads, and more.">
+  <meta name="keywords" content="ad blocker test, adblock, block ads, BlockScope">
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to BlockScope</h1>
+    <p>Test how strong your ad blocker really is.</p>
+
+    <div class="test-area">
+      <div class="ad-box ad-banner" id="banner-ad">Banner Ad</div>
+      <div class="ad-box ad-text" id="text-ad">Sponsored Link</div>
+      <div class="ad-box ad-native" id="native-ad">Native Ad</div>
+      <div class="ad-box ad-video" id="video-ad">
+        <video id="ad-video" width="320" height="240" autoplay muted loop>
+          <source src="video-ad.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Autoplay Video Ad</p>
+      </div>
+    </div>
+
+    <div id="results" class="results"></div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2>Popup Ad</h2>
+        <p>This is a popup ad.</p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+
+    <div class="sticky-footer">
+      <div class="ad-box ad-footer">Sticky Footer Ad</div>
+    </div>
+
+    <p class="footer">Created with curiosity by Harsh</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
