@@ -1,92 +1,193 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #222;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #22ffcc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #22ffcc;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 2rem;
   text-align: center;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
 }
 
-.navbar .logo {
+.hero h1 {
+  font-size: 3rem;
+  color: #22ffcc;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.hero a.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #22ffcc;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.hero a.btn:hover {
+  background-color: #1affb2;
+}
+
+/* Features */
+section#features {
+  padding: 4rem 2rem;
+  background-color: #0f0f0f;
+  transition: all 0.5s ease;
+}
+
+#features h2 {
+  text-align: center;
   font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #22ffcc;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid #222;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  color: #22ffcc;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Ad Test Page */
+.test-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.test-container h2 {
+  color: #22ffcc;
+  margin-bottom: 1rem;
+}
+
+.test-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #121212;
+  border-radius: 8px;
+  border-left: 4px solid #22ffcc;
+}
+
+.result {
+  margin-top: 1rem;
+  color: #44ff88;
   font-weight: bold;
 }
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.hero .cta-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.features .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.feature-item {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Footer */
 footer {
+  background-color: #111;
+  color: #888;
+  padding: 1rem;
   text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+  font-size: 0.9rem;
+  margin-top: 4rem;
 }
 
-/* Ad Test Styles */
-.test-item {
-  margin: 20px 0;
+/* Scroll Animation Classes */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-out;
 }
 
-.ad-box {
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  text-align: center;
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-button:hover {
-  background-color: #444;
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
