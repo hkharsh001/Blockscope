@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlockScope - Advanced Ad Blocker Test</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Test how effectively your ad blocker works on different types of ads including banners, popups, native, and video ads." />
-  <meta name="keywords" content="ad blocker test, adblock, block ads, BlockScope" />
-  <link rel="icon" href="favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test your ad blocker against various ad types like static, popup, native, and more with Block Scope. Ensure your ad blocker is effective!">
+  <meta name="keywords" content="ad blocker test, popup blocker, static ad test, adblock detection, Block Scope, test ad blocker, ad detection tool">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Block Scope - Test Your Ad Blocker">
+  <meta property="og:description" content="Test your ad blocker against various ad types like static, popup, native, and more. Ensure your ad blocker is effective!">
+  <meta property="og:image" content="favicon.ico">
+  <meta property="og:url" content="https://www.blockscope.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Block Scope - Test Your Ad Blocker">
+  <meta name="twitter:description" content="Test your ad blocker against various ad types like static, popup, native, and more. Ensure your ad blocker is effective!">
+  <meta name="twitter:image" content="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>Block Scope - Ad Blocker Test Tool</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to BlockScope</h1>
-    <p>Test how strong your ad blocker really is. We’ll show various types of ads and let you know if your ad blocker is working.</p>
-    
-    <!-- Test area with multiple types of ads -->
-    <div class="test-area">
-      <div class="ad-box ad-banner" id="banner-ad">Banner Ad</div>
-      <div class="ad-box ad-text" id="text-ad">Sponsored Content</div>
-      <div class="ad-box ad-native" id="native-ad">Native Ad</div>
-      <div class="ad-box ad-video" id="video-ad">
-        <video id="ad-video" width="320" height="240" autoplay muted loop>
-          <source src="video-ad.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p>Autoplay Video Ad</p>
-      </div>
-    </div>
-    
-    <!-- Result section -->
-    <div id="results" class="results"></div>
+  <header class="navbar">
+    <div class="logo">Block Scope</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="test.html">Run Test</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-    <!-- Dynamic Popup Ad -->
-    <div class="popup" id="popup">
-      <div class="popup-content">
-        <h2>Popup Ad</h2>
-        <p>This is a popup ad to test your blocker.</p>
-        <button id="close-popup">Close</button>
-      </div>
-    </div>
+  <section class="hero">
+    <h1>Can Your Ad Blocker Handle It?</h1>
+    <p>Test your ad blocker with multiple ad types. Popups, scripts, native ads, and more.</p>
+    <a href="test.html" class="cta-button">Start the Test</a>
+  </section>
 
-    <!-- Footer -->
-    <div class="sticky-footer">
-      <div class="ad-box ad-footer">Sticky Footer Ad</div>
+  <section id="features" class="features">
+    <h2>What We Test</h2>
+    <div class="feature-grid">
+      <div class="feature-item">Static Banner Ads</div>
+      <div class="feature-item">Text & Link Ads</div>
+      <div class="feature-item">JS Script Ads</div>
+      <div class="feature-item">Popup/Interstitial Ads</div>
+      <div class="feature-item">Obfuscated Ads</div>
+      <div class="feature-item">Native Content Ads</div>
     </div>
+  </section>
 
-    <div class="footer">
-      <p>Created by Harsh. All rights reserved.</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <footer id="contact">
+    <p>&copy; 2025 Block Scope. All rights reserved.</p>
+  </footer>
 </body>
 </html>
